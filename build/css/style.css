@@ -327,16 +327,16 @@ template {
   src: url("../fonts/MontserratExtraBold.eot") format("embedded-opentype"), url("../fonts/MontserratExtraBold.woff2") format("woff2"), url("../fonts/MontserratExtraBold.woff") format("woff"), url("../fonts/MontserratExtraBold.ttf") format("truetype"), url("../fonts/MontserratExtraBold.svg#MontserratExtraBold") format("svg"); }
 
 @font-face {
-  font-family: 'latoregular';
-  src: url("../fonts/lato-regular-webfont.eot");
-  src: url("../fonts/lato-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-regular-webfont.woff2") format("woff2"), url("../fonts/lato-regular-webfont.woff") format("woff"), url("../fonts/lato-regular-webfont.ttf") format("truetype"), url("../fonts/lato-regular-webfont.svg#latoregular") format("svg");
+  font-family: 'Latoregular';
+  src: url("../fonts/Lato-Regular.eot");
+  src: local("Lato Regular"), local("Lato-Regular"), url("../fonts/Lato-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato-Regular.woff") format("woff"), url("../fonts/Lato-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'latosemibold';
-  src: url("../fonts/lato-semibold-webfont.eot");
-  src: url("../fonts/lato-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-semibold-webfont.woff2") format("woff2"), url("../fonts/lato-semibold-webfont.woff") format("woff"), url("../fonts/lato-semibold-webfont.ttf") format("truetype"), url("../fonts/lato-semibold-webfont.svg#latosemibold") format("svg");
+  font-family: 'Latosemibold';
+  src: url("../fonts/Lato-Semibold.eot");
+  src: local("Lato Semibold"), local("Lato-Semibold"), url("../fonts/Lato-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato-Semibold.woff") format("woff"), url("../fonts/Lato-Semibold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
@@ -374,6 +374,9 @@ template {
   .button:hover {
     background: #f01f2a; }
 
+.form-btn {
+  width: 403px; }
+
 .section-title {
   max-width: 780px;
   margin: 0 auto;
@@ -392,12 +395,42 @@ template {
 
 .get-catalog {
   padding: 30px 28px;
-  width: 403px;
-  background: #ffffff; }
+  width: 347px;
+  background: #ffffff;
+  font-size: 16px;
+  font-family: 'Latosemibold'; }
+  .get-catalog button {
+    max-width: 348px; }
+  .get-catalog .lable {
+    right: -42px; }
+  .get-catalog__footer {
+    padding: 29px 50px 37px 50px;
+    text-align: center; }
 
 .form-title {
+  margin-top: 0;
+  font-family: 'Latoregular';
   font-size: 23px;
   text-align: center; }
+
+.form__label {
+  display: block;
+  margin-bottom: 14px; }
+
+.form__input {
+  padding: 0 12px;
+  margin-bottom: 24px;
+  width: calc(100% - 24px);
+  height: 52px;
+  line-height: 52px;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px; }
+
+.form-checkbox {
+  margin-top: 18px; }
+
+.checkbox-label {
+  font-size: 14px; }
 
 body {
   font-family: 'MontserratAlternatesRegular' ,sans-serif;
@@ -599,7 +632,7 @@ body {
 
 .catalog {
   background: url(../img/catalog-bg.png);
-  background-size: cover; }
+  background-size: contain; }
   .catalog-menu {
     padding: 0;
     margin-bottom: 80px;
@@ -619,7 +652,8 @@ body {
       flex-basis: 25%;
       -webkit-box-sizing: border-box;
       box-sizing: border-box;
-      border-radius: 8px; }
+      border-radius: 8px;
+      font-family: 'Latosemibold'; }
       .catalog-menu__item.item-1 {
         padding-left: 70px;
         background: url("../img/catalog-item-1.png");

@@ -44,24 +44,22 @@
 			 url('../fonts/MontserratExtraBold.svg#MontserratExtraBold') format('svg');
 }
 @font-face {
-	font-family: 'latoregular';
-	src: url('../fonts/lato-regular-webfont.eot');
-	src: url('../fonts/lato-regular-webfont.eot?#iefix') format('embedded-opentype'),
-			 url('../fonts/lato-regular-webfont.woff2') format('woff2'),
-			 url('../fonts/lato-regular-webfont.woff') format('woff'),
-			 url('../fonts/lato-regular-webfont.ttf') format('truetype'),
-			 url('../fonts/lato-regular-webfont.svg#latoregular') format('svg');
+	font-family: 'Latoregular';
+	src: url('../fonts/Lato-Regular.eot');
+	src: local('Lato Regular'), local('Lato-Regular'),
+			url('../fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/Lato-Regular.woff') format('woff'),
+			url('../fonts/Lato-Regular.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
-	font-family: 'latosemibold';
-	src: url('../fonts/lato-semibold-webfont.eot');
-	src: url('../fonts/lato-semibold-webfont.eot?#iefix') format('embedded-opentype'),
-			 url('../fonts/lato-semibold-webfont.woff2') format('woff2'),
-			 url('../fonts/lato-semibold-webfont.woff') format('woff'),
-			 url('../fonts/lato-semibold-webfont.ttf') format('truetype'),
-			 url('../fonts/lato-semibold-webfont.svg#latosemibold') format('svg');
+	font-family: 'Latosemibold';
+	src: url('../fonts/Lato-Semibold.eot');
+	src: local('Lato Semibold'), local('Lato-Semibold'),
+			url('../fonts/Lato-Semibold.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/Lato-Semibold.woff') format('woff'),
+			url('../fonts/Lato-Semibold.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }

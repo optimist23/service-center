@@ -1,6 +1,6 @@
 .catalog {
 	background: url(../img/catalog-bg.png);
-	background-size: cover;
+	background-size: contain;
 	&-menu {
 		padding: 0;
 		margin-bottom: 80px;
@@ -11,10 +11,10 @@
 		list-style-type: none;
 		border-radius: 8px;
 		&__item {
-			//width: 193px;
 			flex-basis: 25%;
 			box-sizing: border-box;
 			border-radius: 8px;
+			font-family: 'Latosemibold';
 			&.item-1 {
 				padding-left: 70px;
 				background: url('../img/catalog-item-1.png');
