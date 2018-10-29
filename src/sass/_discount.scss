@@ -1,0 +1,44 @@
+.discount{
+	background: url('../img/discount-bg.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	&-list {
+		margin: 0;
+		margin-top: 80px;
+		margin-bottom: 114px;
+		padding: 0;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		list-style-type: none;
+		&__item {
+			width: 286px;
+			.discount-1 {
+				background: url('../img/discount-icon-1.png');
+				background-repeat: no-repeat;
+				background-position: center center;
+			}
+			.discount-2 {
+				background: url('../img/discount-icon-2.png');
+				background-repeat: no-repeat;
+				background-position: center center;
+			}
+			.discount-3 {
+				background: url('../img/discount-icon-3.png');
+				background-repeat: no-repeat;
+				background-position: center center;
+			}
+		}
+	}
+	&-icon-box {
+		margin: 0 auto;
+		width: 125px;
+		height: 125px;
+		border: 8px solid $red;
+		border-radius: 8px;
+	}
+	&-descr {
+		text-align: center;
+		font-size: 21px;
+	}
+}

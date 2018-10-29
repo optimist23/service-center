@@ -374,6 +374,20 @@ template {
   .button:hover {
     background: #f01f2a; }
 
+.section-title {
+  max-width: 780px;
+  margin: 0 auto;
+  margin-bottom: 28px;
+  font-size: 43px;
+  text-align: center;
+  font-family: 'MontserratExtraBold', sans-serif; }
+
+.section-subtitle {
+  max-width: 780px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 24px; }
+
 body {
   font-family: 'MontserratAlternatesRegular' ,sans-serif;
   font-size: 18px; }
@@ -517,3 +531,45 @@ body {
     font-family: 'MontserratAlternatesSemiBold' ,sans-serif; }
   .advantages-descr__link {
     color: #000; }
+
+.discount {
+  background: url("../img/discount-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .discount-list {
+    margin: 0;
+    margin-top: 80px;
+    margin-bottom: 114px;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    list-style-type: none; }
+    .discount-list__item {
+      width: 286px; }
+      .discount-list__item .discount-1 {
+        background: url("../img/discount-icon-1.png");
+        background-repeat: no-repeat;
+        background-position: center center; }
+      .discount-list__item .discount-2 {
+        background: url("../img/discount-icon-2.png");
+        background-repeat: no-repeat;
+        background-position: center center; }
+      .discount-list__item .discount-3 {
+        background: url("../img/discount-icon-3.png");
+        background-repeat: no-repeat;
+        background-position: center center; }
+  .discount-icon-box {
+    margin: 0 auto;
+    width: 125px;
+    height: 125px;
+    border: 8px solid #de343d;
+    border-radius: 8px; }
+  .discount-descr {
+    text-align: center;
+    font-size: 21px; }
