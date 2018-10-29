@@ -1,10 +1,10 @@
-p {
-	padding: 0;
-	font-size: 30px;
-	color: purple;
-}
+//@import "_variables.scss";
+//@import "_components.scss";
+@import "_normalize.scss";
+@import "_fonts.scss";
+
 body {
-	padding: 0;
-	margin-top: 200px;
-	background: #ccc;
+	font-family: 'latosemibold' ,sans-serif;
+	font-size: 32px;
+	color: green;
 }
