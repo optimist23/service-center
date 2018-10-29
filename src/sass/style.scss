@@ -2,6 +2,7 @@
 @import "_fonts.scss";
 @import "_variables.scss";
 @import "_components.scss";
+@import "_forms.scss";
 
 body {
 	font-family: 'MontserratAlternatesRegular' ,sans-serif;
@@ -14,4 +15,5 @@ body {
 
 @import "_header.scss";
 @import "_advantages.scss";
-@import "_discount.scss"
+@import "_discount.scss";
+@import "_catalog.scss";

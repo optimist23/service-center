@@ -1,0 +1,59 @@
+.catalog {
+	background: url(../img/catalog-bg.png);
+	background-size: cover;
+	&-menu {
+		padding: 0;
+		margin-bottom: 80px;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		background: $white;
+		list-style-type: none;
+		border-radius: 8px;
+		&__item {
+			//width: 193px;
+			flex-basis: 25%;
+			box-sizing: border-box;
+			border-radius: 8px;
+			&.item-1 {
+				padding-left: 70px;
+				background: url('../img/catalog-item-1.png');
+				background-position: 10px center;
+				background-repeat: no-repeat;
+			}
+			&.item-2 {
+				padding-left: 100px;
+				background: url('../img/catalog-item-2.png');
+				background-position: 10px center;
+				background-repeat: no-repeat;	
+			}
+			&.item-3 {
+				padding-left: 102px;
+				background: url('../img/catalog-item-3.png');
+				background-position: 10px center;
+				background-repeat: no-repeat;	
+			}
+			&.item-4 {
+				padding-left: 120px;
+				background: url('../img/catalog-item-4.png');
+				background-position: 6px center;
+				background-repeat: no-repeat;	
+			}
+			&:hover {
+				background-color: $item_hov;
+				color: $white;
+			}
+		}		
+	}
+	&-item__descr {
+		width: 154px;
+	}
+	&-body {
+		display: flex;
+		.catalog-img {
+			img {
+				max-width: 740px;
+			}
+		}
+	}
+}

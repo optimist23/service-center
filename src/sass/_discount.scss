@@ -1,4 +1,5 @@
 .discount{
+	padding-bottom: 80px;
 	background: url('../img/discount-bg.png');
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -40,5 +41,21 @@
 	&-descr {
 		text-align: center;
 		font-size: 21px;
+	}
+	.official-dealers {
+		margin-bottom: 50px;
+		font-size: 30px;
+		text-align: center;
+		font-family: 'MontserratAlternatesSemiBold', sans-serif;
+	}
+	.dealers-slider{
+		&__item {
+			width: 140px;
+			height: 195px;
+			overflow: hidden;
+			img {
+				width: 90%;
+			}
+		}
 	}
 }

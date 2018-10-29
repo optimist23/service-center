@@ -42,6 +42,9 @@
 	font-size: 43px;
 	text-align: center;
 	font-family: 'MontserratExtraBold', sans-serif;
+	&.white {
+		color: $white;
+	}
 }
 .section-subtitle {
 	max-width: 780px;
