@@ -1,0 +1,38 @@
+.advantages {
+	display: flex;
+	&-list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	&-item {
+		padding-left: 60px;
+		width: 238px;
+		
+	}
+	.item-1 {
+		background: url('../img/advantages-icon-1.png');background-position: left top;
+		background-repeat: no-repeat;
+	}
+	.item-2 {
+		background: url('../img/advantages-icon-2.png');background-position: left top;
+		background-repeat: no-repeat;
+	}
+	.item-3 {
+		background: url('../img/advantages-icon-3.png');background-position: left top;
+		background-repeat: no-repeat;
+	}
+	&-title {
+		margin-top: 0;
+		font-family: 'MontserratAlternatesSemiBold' ,sans-serif;
+		font-size: 24px;
+	}
+	&-descr {
+		&__bold {
+			font-family: 'MontserratAlternatesSemiBold' ,sans-serif;
+		}
+		&__link {
+			color: $black;
+		}
+	}
+}

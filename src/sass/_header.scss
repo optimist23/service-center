@@ -2,14 +2,17 @@
 	display: flex;
 	padding-top: 40px;
 	background: url('../img/header-bg.jpg');
+	margin-bottom: 80px;
 	&-top{
 		justify-content: space-between;
 		display: flex;
+		flex-wrap: wrap;
 		align-items: center;
 		margin-bottom: 110px;
 	}
 	.header-menu{
 		display: flex;
+		flex-wrap: wrap;
 		align-items: flex-start;
 		font-family: 'MontserratAlternatesMedium' ,sans-serif;
 		&__item{
@@ -56,6 +59,7 @@
 	.page-header {
 		&-content{
 			display: flex;
+			flex-wrap: wrap;
 			align-items: flex-end;
 			.main-title{
 			font-family: 'MontserratExtraBold', sans-serif;

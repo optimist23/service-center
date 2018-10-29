@@ -387,7 +387,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   padding-top: 40px;
-  background: url("../img/header-bg.jpg"); }
+  background: url("../img/header-bg.jpg");
+  margin-bottom: 80px; }
   .page-header-top {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
@@ -395,6 +396,8 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -403,6 +406,8 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
@@ -456,6 +461,8 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-box-align: end;
     -ms-flex-align: end;
     align-items: flex-end; }
@@ -473,3 +480,40 @@ body {
       font-size: 21px; }
   .page-header .page-header-photo {
     margin-left: auto; }
+
+.advantages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .advantages-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .advantages-item {
+    padding-left: 60px;
+    width: 238px; }
+  .advantages .item-1 {
+    background: url("../img/advantages-icon-1.png");
+    background-position: left top;
+    background-repeat: no-repeat; }
+  .advantages .item-2 {
+    background: url("../img/advantages-icon-2.png");
+    background-position: left top;
+    background-repeat: no-repeat; }
+  .advantages .item-3 {
+    background: url("../img/advantages-icon-3.png");
+    background-position: left top;
+    background-repeat: no-repeat; }
+  .advantages-title {
+    margin-top: 0;
+    font-family: 'MontserratAlternatesSemiBold' ,sans-serif;
+    font-size: 24px; }
+  .advantages-descr__bold {
+    font-family: 'MontserratAlternatesSemiBold' ,sans-serif; }
+  .advantages-descr__link {
+    color: #000; }
