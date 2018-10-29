@@ -1,10 +1,15 @@
-//@import "_variables.scss";
-//@import "_components.scss";
 @import "_normalize.scss";
 @import "_fonts.scss";
+@import "_variables.scss";
+@import "_components.scss";
 
 body {
-	font-family: 'latosemibold' ,sans-serif;
-	font-size: 32px;
-	color: green;
+	font-family: 'MontserratAlternatesRegular' ,sans-serif;
+	font-size: 18px;
 }
+.wrapper{
+	width: 1170px;
+	margin: 0 auto;
+}
+
+@import "_header.scss";

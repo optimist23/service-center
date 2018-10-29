@@ -340,7 +340,136 @@ template {
   font-weight: normal;
   font-style: normal; }
 
+.main-button {
+  position: relative;
+  max-width: 340px; }
+  .main-button .lable {
+    position: absolute;
+    display: block;
+    right: -5px;
+    top: -36px;
+    width: 72px;
+    height: 71px;
+    background: url("../img/button-lable.png");
+    color: #ffffff; }
+  .main-button .label-text {
+    text-align: center;
+    margin-top: 16px;
+    font-size: 16px; }
+    .main-button .label-text .lable-small {
+      font-size: 11px; }
+
+.button {
+  padding: 32px 24px 24px 24px;
+  max-width: 340px;
+  background: #de343d;
+  border: none;
+  border-radius: 8px;
+  border-bottom: 4px solid #a8171f;
+  color: #ffffff;
+  font-size: 14px;
+  font-family: 'MontserratAlternatesBlack', sans-serif;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s; }
+  .button:hover {
+    background: #f01f2a; }
+
 body {
-  font-family: 'latosemibold' ,sans-serif;
-  font-size: 32px;
-  color: green; }
+  font-family: 'MontserratAlternatesRegular' ,sans-serif;
+  font-size: 18px; }
+
+.wrapper {
+  width: 1170px;
+  margin: 0 auto; }
+
+.page-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 40px;
+  background: url("../img/header-bg.jpg"); }
+  .page-header-top {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 110px; }
+  .page-header .header-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    font-family: 'MontserratAlternatesMedium' ,sans-serif; }
+    .page-header .header-menu__item {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin-right: 100px; }
+      .page-header .header-menu__item:last-child {
+        margin-right: 0; }
+      .page-header .header-menu__item .link-icon {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin-right: 6px;
+        margin-left: 10px;
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        border: 1px solid #de343d; }
+        .page-header .header-menu__item .link-icon__in {
+          width: 11px;
+          height: 11px;
+          border-radius: 50%;
+          border: 5px solid #de343d; }
+      .page-header .header-menu__item.phone {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column; }
+        .page-header .header-menu__item.phone .free-consultation__link {
+          color: #de343d;
+          font-family: 'MontserratAlternatesRegular' ,sans-serif; }
+    .page-header .header-menu__link {
+      color: #000; }
+    .page-header .header-menu__phone-link {
+      font-size: 24px;
+      color: #000;
+      text-decoration: none; }
+  .page-header .page-header-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end; }
+    .page-header .page-header-content .main-title {
+      font-family: 'MontserratExtraBold', sans-serif;
+      font-size: 48px; }
+      .page-header .page-header-content .main-title__subtitle {
+        padding-left: 12px;
+        border-left: 3px solid #de343d;
+        font-size: 27px; }
+  .page-header .page-header__left {
+    max-width: 518px; }
+    .page-header .page-header__left .guarantee {
+      margin-bottom: 60px;
+      font-size: 21px; }
+  .page-header .page-header-photo {
+    margin-left: auto; }

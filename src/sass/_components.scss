@@ -1,0 +1,37 @@
+.main-button{
+	position: relative;
+	max-width: 340px;
+	.lable {
+		position: absolute;
+		display: block;
+		right: -5px;
+		top: -36px;
+		width: 72px;
+		height: 71px;
+		background: url('../img/button-lable.png');
+		color: $white;		
+	}
+	.label-text {
+		text-align: center;
+		margin-top: 16px;
+		font-size: 16px;
+		.lable-small {
+			font-size: 11px;
+		}
+	}
+}
+.button {
+	padding: 32px 24px 24px 24px;
+	max-width: 340px;
+	background: $red;
+	border: none;
+	border-radius: 8px;
+	border-bottom: 4px solid $dark_red;
+	color: $white;
+	font-size: 14px;
+	font-family: 'MontserratAlternatesBlack', sans-serif;
+	transition: all 0.5s;
+	&:hover {
+		background: $btn_hover;
+	}
+}

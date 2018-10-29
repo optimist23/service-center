@@ -23,12 +23,7 @@ gulp.task('sass', function () {
 		.pipe(gulp.dest('./build/css'))
 		.pipe(browserSync.stream());;
 });
-gulp.task('styles', function() {
-  return gulp.src(['./src/sass/normalize.css', './src/sass/style.scss'])
-    .pipe(concat('style.css'))
-		.pipe(gulp.dest('./build/css'))
-		.pipe(browserSync.stream());;
-});
+
 
 gulp.task('watch', function() {
 	gulp.watch("./*.html").on('change', browserSync.reload);
@@ -37,7 +32,6 @@ gulp.task('watch', function() {
 
 gulp.task('default', gulp.series(
 	gulp.parallel('sass'),
-	gulp.parallel('styles'),
 	gulp.parallel('watch','serve')
 	));
 
