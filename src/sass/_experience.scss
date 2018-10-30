@@ -1,0 +1,29 @@
+.experience{
+	&-subtitle {
+		margin-bottom: 80px;
+		font-size: 30px;
+		text-align: center;
+	}
+	&-content{
+		display: flex;
+		.sertificates-list {
+			display: flex;
+			.experience-certificates__item {
+				width: 128px;
+				height: 191px;
+				margin-right: 30px;
+				overflow: hidden;
+				img {
+					width: 128px;
+				}
+			}
+		}
+		.experience-photo {
+			margin-left: auto;
+		}
+		.sertificates-descr {
+			width: 304px;
+			text-align: center;
+		}
+	}
+}

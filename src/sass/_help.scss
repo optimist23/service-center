@@ -1,0 +1,44 @@
+.help {
+	padding-top: 50px;
+	background: url('../img/help-bg.png');
+	background-size: cover;
+	color: $white;
+	&-content {
+		display: flex;
+	}
+	&-list {
+		padding: 0;
+		margin-top: 0;
+		list-style-type: none;
+		&__item {
+			width: 77%;
+			padding-left: 50px;
+			background: url('../img/bullit-icon.png');
+			background-repeat: no-repeat;
+			background-position: left top;
+			.help-item__title {
+				margin-bottom: 20px;
+				font-size: 24px;
+				font-family: 'MontserratAlternatesRegular';
+			}
+			.help-item__descr {
+				margin-bottom: 52px;
+			}
+		}
+	}
+	.help-content__sale {
+		display: flex;
+		.sale-box {
+			max-width: 494px;
+			&__title {
+				font-size: 21px;
+			}
+		}
+		.catalog-form {
+			margin-left: auto;
+		}
+	}
+	.catalog-form {
+		color: $black;
+	}
+}

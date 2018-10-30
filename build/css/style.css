@@ -360,7 +360,7 @@ template {
       font-size: 11px; }
 
 .button {
-  padding: 32px 24px 24px 24px;
+  padding: 28px 24px 24px 24px;
   max-width: 340px;
   background: #de343d;
   border: none;
@@ -412,6 +412,12 @@ template {
   font-family: 'Latoregular';
   font-size: 23px;
   text-align: center; }
+
+.form-subtitle {
+  text-align: center;
+  color: #666666;
+  font-size: 16px;
+  margin-top: 0; }
 
 .form__label {
   display: block;
@@ -632,7 +638,7 @@ body {
 
 .catalog {
   background: url(../img/catalog-bg.png);
-  background-size: contain; }
+  background-size: cover; }
   .catalog-menu {
     padding: 0;
     margin-bottom: 80px;
@@ -685,3 +691,105 @@ body {
     display: flex; }
     .catalog-body .catalog-img img {
       max-width: 740px; }
+
+.benefit .section-title {
+  min-width: 1120px; }
+
+.benefit .number-icon {
+  font-size: 48px;
+  color: #cccccc;
+  font-family: 'MontserratAlternatesSemiBold' ,sans-serif; }
+  .benefit .number-icon.center-icon {
+    margin-top: 58px;
+    text-align: center; }
+
+.benefit-title {
+  font-size: 27px;
+  font-family: 'MontserratAlternatesSemiBold' ,sans-serif; }
+  .benefit-title__center {
+    text-align: center; }
+
+.benefit-subtitle {
+  font-size: 21px; }
+  .benefit-subtitle__center {
+    text-align: center; }
+
+.benefit-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .benefit-list .benefit-item {
+    padding: 48px 30px 30px 30px;
+    max-width: 480px;
+    border: 8px solid #de343d;
+    border-radius: 8px; }
+    .benefit-list .benefit-item__descr {
+      padding-left: 10px;
+      border-left: 3px solid #de343d; }
+
+.help {
+  padding-top: 50px;
+  background: url("../img/help-bg.png");
+  background-size: cover;
+  color: #ffffff; }
+  .help-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .help-list {
+    padding: 0;
+    margin-top: 0;
+    list-style-type: none; }
+    .help-list__item {
+      width: 77%;
+      padding-left: 50px;
+      background: url("../img/bullit-icon.png");
+      background-repeat: no-repeat;
+      background-position: left top; }
+      .help-list__item .help-item__title {
+        margin-bottom: 20px;
+        font-size: 24px;
+        font-family: 'MontserratAlternatesRegular'; }
+      .help-list__item .help-item__descr {
+        margin-bottom: 52px; }
+  .help .help-content__sale {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .help .help-content__sale .sale-box {
+      max-width: 494px; }
+      .help .help-content__sale .sale-box__title {
+        font-size: 21px; }
+    .help .help-content__sale .catalog-form {
+      margin-left: auto; }
+  .help .catalog-form {
+    color: #000; }
+
+.experience-subtitle {
+  margin-bottom: 80px;
+  font-size: 30px;
+  text-align: center; }
+
+.experience-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .experience-content .sertificates-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .experience-content .sertificates-list .experience-certificates__item {
+      width: 128px;
+      height: 191px;
+      margin-right: 30px;
+      overflow: hidden; }
+      .experience-content .sertificates-list .experience-certificates__item img {
+        width: 128px; }
+  .experience-content .experience-photo {
+    margin-left: auto; }
+  .experience-content .sertificates-descr {
+    width: 304px;
+    text-align: center; }
