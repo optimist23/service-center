@@ -1,13 +1,16 @@
 .help {
-	padding-top: 50px;
-	background: url('../img/help-bg.png');
+	padding-top: 140px;
+	background: url('../img/service-bg.jpg');
 	background-size: cover;
 	color: $white;
+	-webkit-clip-path: polygon(100% 0, 100% 100%, 35% 91%, 0 100%, 0 0, 38% 8%);
+	clip-path: polygon(100% 0, 100% 100%, 35% 91%, 0 100%, 0 0, 38% 8%);
 	&-content {
 		display: flex;
 	}
 	&-list {
 		padding: 0;
+		padding-bottom: 90px;
 		margin-top: 0;
 		list-style-type: none;
 		&__item {

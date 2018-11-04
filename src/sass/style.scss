@@ -8,6 +8,9 @@ body {
 	font-family: 'MontserratAlternatesRegular' ,sans-serif;
 	font-size: 18px;
 }
+img {
+	max-width: 100%;
+}
 .wrapper{
 	width: 1170px;
 	margin: 0 auto;
@@ -20,3 +23,5 @@ body {
 @import "_benefit.scss";
 @import "_help.scss";
 @import "_experience.scss";
+@import "clients.scss";
+@import "_media.scss";

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -393,6 +394,154 @@ template {
   text-align: center;
   font-size: 24px; }
 
+/* кнопки слайдер */
+.arrow {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 51px;
+  height: 51px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 22px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 22px 0px rgba(0, 0, 0, 0.15);
+  background: #fff;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s; }
+  .arrow:hover {
+    background-color: red; }
+  .arrow:hover i {
+    color: #fff; }
+  .arrow i {
+    font-size: 30px;
+    margin-right: 5px; }
+    .arrow i.fa-angle-right {
+      margin-right: 0;
+      margin-left: 5px; }
+
+.arrow-prev {
+  position: absolute;
+  left: -60px;
+  top: 50%;
+  -webkit-transform: translateY(-25px);
+  transform: translateY(-25px); }
+
+.arrow-next {
+  position: absolute;
+  right: -60px;
+  top: 50%;
+  -webkit-transform: translateY(-25px);
+  transform: translateY(-25px); }
+
+/* кнопки слайдер */
+/* слайдер с боковой навигацией */
+.experience-slider-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 80px; }
+
+.experience-slider__title {
+  font-size: 24px;
+  text-align: center; }
+
+.experience-slider-box {
+  margin-left: auto;
+  max-width: 880px;
+  max-height: 430px; }
+
+.experience-slider .experience-slide {
+  max-width: 880px;
+  max-height: 430px; }
+
+.experience-slider-nav .slider-nav__list {
+  padding: 0;
+  margin: 0;
+  width: 222px;
+  border: 1px solid #e5e5e5;
+  font-size: 16px;
+  list-style-type: none; }
+  .experience-slider-nav .slider-nav__list .slick-list {
+    overflow: visible; }
+  .experience-slider-nav .slider-nav__list .slick-list.draggable {
+    -webkit-transform: none !important;
+    transform: none !important; }
+    .experience-slider-nav .slider-nav__list .slick-list.draggable .slick-track {
+      -webkit-transform: none !important;
+      transform: none !important; }
+
+.experience-slider-nav .slider-nav__item {
+  position: relative;
+  padding: 35px 16px 23px 14px;
+  min-height: 95px;
+  border-bottom: 1px solid #e5e5e5;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+  .experience-slider-nav .slider-nav__item.slick-current {
+    position: relative;
+    color: #ffffff;
+    background: #de343d; }
+    .experience-slider-nav .slider-nav__item.slick-current::after {
+      content: '';
+      position: absolute;
+      right: -16px;
+      top: 0;
+      width: 0;
+      height: 0;
+      border-top: 44px solid transparent;
+      border-left: 15px solid #de343d;
+      border-bottom: 50px solid transparent;
+      z-index: 100; }
+  .experience-slider-nav .slider-nav__item:last-child {
+    border-bottom: none; }
+  .experience-slider-nav .slider-nav__item:hover {
+    color: #ffffff;
+    background: #de343d; }
+  .experience-slider-nav .slider-nav__item:hover .experience-slider-nav .slider-nav__item::after {
+    display: block; }
+
+.experience-slider .dots {
+  list-style-type: none;
+  padding: 0;
+  text-align: center; }
+  .experience-slider .dots li {
+    display: inline-block;
+    margin-right: 10px; }
+  .experience-slider .dots button {
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: #de343d;
+    font-size: 0;
+    border: none;
+    border-radius: 50%; }
+
+/* слайдер с боковой навигацией */
+/* таблица с клиентами */
+.dealership-clients__table {
+  border: 1px solid #e5e5e5;
+  border-collapse: collapse;
+  text-align: center; }
+
+.dealership-clients__column {
+  padding: 8px 30px;
+  border: 1px solid #e5e5e5; }
+  .dealership-clients__column img {
+    margin: 0 auto; }
+
+/* таблица с клиентами */
+.mb-0 {
+  margin-bottom: 0 !important; }
+
+.none {
+  display: none; }
+
 .get-catalog {
   padding: 30px 28px;
   width: 347px;
@@ -441,6 +590,9 @@ template {
 body {
   font-family: 'MontserratAlternatesRegular' ,sans-serif;
   font-size: 18px; }
+
+img {
+  max-width: 100%; }
 
 .wrapper {
   width: 1170px;
@@ -637,8 +789,12 @@ body {
       width: 90%; }
 
 .catalog {
-  background: url(../img/catalog-bg.png);
-  background-size: cover; }
+  padding-top: 110px;
+  padding-bottom: 150px;
+  background: url("../img/service-bg.jpg");
+  background-size: cover;
+  -webkit-clip-path: polygon(100% 8%, 100% 91%, 66% 99%, 0 91%, 0 8%, 64% 0);
+  clip-path: polygon(100% 8%, 100% 91%, 66% 99%, 0 91%, 0 8%, 64% 0); }
   .catalog-menu {
     padding: 0;
     margin-bottom: 80px;
@@ -731,16 +887,19 @@ body {
       border-left: 3px solid #de343d; }
 
 .help {
-  padding-top: 50px;
-  background: url("../img/help-bg.png");
+  padding-top: 140px;
+  background: url("../img/service-bg.jpg");
   background-size: cover;
-  color: #ffffff; }
+  color: #ffffff;
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 35% 91%, 0 100%, 0 0, 38% 8%);
+  clip-path: polygon(100% 0, 100% 100%, 35% 91%, 0 100%, 0 0, 38% 8%); }
   .help-content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
   .help-list {
     padding: 0;
+    padding-bottom: 90px;
     margin-top: 0;
     list-style-type: none; }
     .help-list__item {
@@ -771,12 +930,14 @@ body {
 .experience-subtitle {
   margin-bottom: 80px;
   font-size: 30px;
-  text-align: center; }
+  text-align: center;
+  font-family: 'MontserratAlternatesSemiBold', sans-serif; }
 
 .experience-content {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  margin-bottom: 80px; }
   .experience-content .sertificates-list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -793,3 +954,52 @@ body {
   .experience-content .sertificates-descr {
     width: 304px;
     text-align: center; }
+
+.experience .equipment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .experience .equipment-catalog {
+    position: relative;
+    margin-right: 30px; }
+    .experience .equipment-catalog_btn {
+      position: absolute;
+      top: 0; }
+
+.clients .dealership-clients__slider {
+  display: none; }
+
+@media screen and (max-width: 480px) {
+  .page-header__left {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2; }
+  .page-header-photo {
+    width: 80%; }
+  .advantages-list {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center; }
+  .advantages-item {
+    padding-left: 0;
+    padding-top: 60px; }
+  .advantages .item-1, .advantages .item-2, .advantages .item-3 {
+    background-position: top center; }
+  .discount-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .clients .dealership-clients__table {
+    display: none; }
+  .clients .dealership-clients__slider {
+    display: block; } }

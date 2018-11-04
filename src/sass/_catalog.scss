@@ -1,6 +1,10 @@
 .catalog {
-	background: url(../img/catalog-bg.png);
+	padding-top: 110px;
+  padding-bottom: 150px;
+	background: url('../img/service-bg.jpg');
 	background-size: cover;
+	-webkit-clip-path: polygon(100% 8%, 100% 91%, 66% 99%, 0 91%, 0 8%, 64% 0);
+	clip-path: polygon(100% 8%, 100% 91%, 66% 99%, 0 91%, 0 8%, 64% 0);
 	&-menu {
 		padding: 0;
 		margin-bottom: 80px;

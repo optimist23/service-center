@@ -3,9 +3,11 @@
 		margin-bottom: 80px;
 		font-size: 30px;
 		text-align: center;
+		font-family: 'MontserratAlternatesSemiBold', sans-serif;
 	}
 	&-content{
 		display: flex;
+		margin-bottom: 80px;
 		.sertificates-list {
 			display: flex;
 			.experience-certificates__item {
@@ -24,6 +26,19 @@
 		.sertificates-descr {
 			width: 304px;
 			text-align: center;
+		}
+	}
+	.equipment {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		&-catalog {
+			position: relative;
+			margin-right: 30px;
+			&_btn {
+				position: absolute;
+				top: 0;
+			}
 		}
 	}
 }
