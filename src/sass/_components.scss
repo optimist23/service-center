@@ -103,6 +103,7 @@
 .experience-slider {
 	&-content {
 		display: flex;
+		flex-wrap: wrap;
 		margin-bottom: 80px;
 	}
 	&__title {

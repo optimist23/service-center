@@ -33,7 +33,16 @@ $(document).ready(function() {
 		prevArrow: '<div class="arrow arrow-prev"><i class="fas fa-angle-left" aria-hidden="true"></i></div>',
 		dots: true,
 		dotsClass: 'dots',
-		asNavFor: '.slider-nav__list, .problem-list'
+		asNavFor: '.slider-nav__list, .problem-list',
+		responsive: [
+			{
+				breakpoint: 320,
+				settings: {
+					arrows: true,
+					slidesToShow: 1
+				}
+			}
+		]
 	});
 	$('.slider-nav__list').slick({
 		slidesToShow: 4,
@@ -52,7 +61,7 @@ $(document).ready(function() {
 	$('.dealership-clients__slider').slick({
 		responsive: [
 			{
-				breakpoint: 480,
+				breakpoint: 320,
 				settings: {
 					arrows: true,
 					nextArrow: '<div class="arrow arrow-next"><i class="fas fa-angle-right" aria-hidden="true"></i></div>',
@@ -62,6 +71,13 @@ $(document).ready(function() {
 			}
 		]
 	});
+
+	/* модальные окна */
+	$('.best-diller').magnificPopup();
+	$('.free-consultation__link').magnificPopup();
+
+
+	/* модальные окна */
 	
 }); /* end jquery */
 

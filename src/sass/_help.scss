@@ -33,8 +33,10 @@
 	}
 	.help-content__sale {
 		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
 		.sale-box {
-			max-width: 494px;
+			flex-basis: 494px;
 			&__title {
 				font-size: 21px;
 			}

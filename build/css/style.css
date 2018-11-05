@@ -445,6 +445,8 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   margin-bottom: 80px; }
 
 .experience-slider__title {
@@ -586,6 +588,30 @@ template {
 
 .checkbox-label {
   font-size: 14px; }
+
+.popup-title {
+  font-size: 23px;
+  margin-bottom: 20px; }
+
+.popup-best-diller {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+  padding: 25px;
+  background: #ffffff;
+  text-align: center; }
+  .popup-best-diller .sertificate-box {
+    margin: 0 auto;
+    width: 154px;
+    height: 220px;
+    overflow: hidden; }
+
+.popup-free-consultation {
+  position: relative;
+  width: 300px;
+  margin: 0 auto; }
+  .popup-free-consultation .catalog-form {
+    width: 300px; }
 
 body {
   font-family: 'MontserratAlternatesRegular' ,sans-serif;
@@ -931,9 +957,15 @@ img {
   .help .help-content__sale {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
     .help .help-content__sale .sale-box {
-      max-width: 494px; }
+      -ms-flex-preferred-size: 494px;
+      flex-basis: 494px; }
       .help .help-content__sale .sale-box__title {
         font-size: 21px; }
     .help .help-content__sale .catalog-form {
@@ -985,7 +1017,8 @@ img {
     margin-right: 30px; }
     .experience .equipment-catalog_btn {
       position: absolute;
-      top: 0; }
+      top: 32%;
+      left: 18%; }
 
 .clients .dealership-clients__slider {
   display: none; }
@@ -1107,6 +1140,35 @@ img {
     text-decoration: underline;
     color: #de343d; }
 
+.tab-label {
+  cursor: pointer;
+  float: left;
+  margin-right: 5px;
+  min-width: 212px;
+  display: block;
+  background-color: #ecf0f1;
+  text-align: center; }
+
+.tab-input {
+  display: none; }
+  .tab-input:checked + label {
+    background-color: #fff;
+    position: relative; }
+
+input[id="tab-1"]:checked ~ .content .tab-1,
+input[id="tab-2"]:checked ~ .content .tab-2 {
+  display: block; }
+
+.content {
+  clear: both;
+  position: relative; }
+
+article {
+  padding: 30px 50px;
+  background-color: #fff;
+  display: none;
+  min-height: 200px; }
+
 @media only screen and (max-width: 320px) {
   .page-header .page-header-photo {
     width: 80%; }
@@ -1120,7 +1182,9 @@ img {
     .benefit .mobile-benefit__btn {
       display: block;
       margin: 0 auto;
-      margin-bottom: 15px; } }
+      margin-bottom: 15px; }
+  .experience-slider-box {
+    width: 90%; } }
 
 @media screen and (max-width: 480px) {
   .page-header__left {
