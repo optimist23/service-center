@@ -1,9 +1,8 @@
 .advantages {
-	display: flex;
-	&-list {
+	.advantages-list {
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: space-between;
+		justify-content: center;
 	}
 	&-item {
 		padding-left: 60px;

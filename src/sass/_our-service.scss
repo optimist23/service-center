@@ -1,0 +1,38 @@
+.our-service {
+	.steps-list {
+		display: flex;
+		flex-wrap: wrap;
+		&__item {
+			position: relative;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-right: 35px;
+			padding: 41px 71px;
+			width: 418px;
+			text-align: center;
+			background: $white;
+			border-radius: 8px;
+			border: 1px solid $border_grey;
+			font-size: 24px;
+			&:last-child {
+				margin-right: 0;
+			}
+			.step__item-number {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				position: absolute;
+				width: 70px;
+				height: 70px;
+				border: 8px solid $red;
+				border-radius: 8px;
+				left: -15px;
+				top: -15px;
+				background: $white;
+				font-family: 'MontserratExtraBold', sans-serif;
+				font-size: 36px;
+			}
+		}
+	}
+}

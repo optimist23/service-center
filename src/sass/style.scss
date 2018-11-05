@@ -12,7 +12,8 @@ img {
 	max-width: 100%;
 }
 .wrapper{
-	width: 1170px;
+	max-width: 1200px;
+	padding: 0 15px;
 	margin: 0 auto;
 }
 
@@ -23,5 +24,9 @@ img {
 @import "_benefit.scss";
 @import "_help.scss";
 @import "_experience.scss";
-@import "clients.scss";
+@import "_clients.scss";
+@import "_our-service.scss";
+@import "_delivery.scss";
+@import "_goods.scss";
+@import "_welcome.scss";
 @import "_media.scss";

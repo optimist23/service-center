@@ -7,6 +7,7 @@
 	clip-path: polygon(100% 0, 100% 100%, 35% 91%, 0 100%, 0 0, 38% 8%);
 	&-content {
 		display: flex;
+		flex-wrap: wrap;
 	}
 	&-list {
 		padding: 0;
@@ -16,6 +17,7 @@
 		&__item {
 			width: 77%;
 			padding-left: 50px;
+			min-height: 40px;
 			background: url('../img/bullit-icon.png');
 			background-repeat: no-repeat;
 			background-position: left top;

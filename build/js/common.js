@@ -33,9 +33,9 @@ $(document).ready(function() {
 		prevArrow: '<div class="arrow arrow-prev"><i class="fas fa-angle-left" aria-hidden="true"></i></div>',
 		dots: true,
 		dotsClass: 'dots',
-		asNavFor: '.experience-slider-nav, .problem-list'
+		asNavFor: '.slider-nav__list, .problem-list'
 	});
-	$('.experience-slider-nav').slick({
+	$('.slider-nav__list').slick({
 		slidesToShow: 4,
 		vertical: true,
 		arrows: false,
@@ -45,7 +45,7 @@ $(document).ready(function() {
 	$('.problem-list').slick({
 		slidesToShow: 1,
 		arrows: false,
-		asNavFor: '.experience-slider-nav, .experience-slider-nav'
+		asNavFor: '.slider-nav__list, .experience-slider-box'
 	});
 
 
@@ -64,3 +64,17 @@ $(document).ready(function() {
 	});
 	
 }); /* end jquery */
+
+
+function CatalogChange1(){
+	document.querySelector('.catalog-change').innerHTML = "двухстоечных подъемников";
+}
+function CatalogChange2(){
+	document.querySelector('.catalog-change').innerHTML = "чутырехстоечных подъемников";
+}
+function CatalogChange3(){
+  document.querySelector('.catalog-change').innerHTML = "ножнечных подъемников";
+}
+function CatalogChange4(){
+  document.querySelector('.catalog-change').innerHTML = "пневматических подъемников";
+}

@@ -177,17 +177,17 @@
 				до 30% в сентябре
 			</h2>
 			<ul class="catalog-menu">
-				<li class="catalog-menu__item item-1">
+				<li class="catalog-menu__item item-1 active" onclick="CatalogChange1()">
 					<p class="catalog-item__descr">Двухстоечные подъемники</p>
 				</li>
-				<li class="catalog-menu__item item-2">
+				<li class="catalog-menu__item item-2" onclick="CatalogChange2()">
 					<p class="catalog-item__descr">Четырехстоечные 
 							подъемники</p>
 				</li>
-				<li class="catalog-menu__item item-3">
+				<li class="catalog-menu__item item-3" onclick="CatalogChange3()">
 					<p class="catalog-item__descr">Ножничные подъемники</p>
 				</li>
-				<li class="catalog-menu__item item-4">
+				<li class="catalog-menu__item item-4" onclick="CatalogChange4()">
 					<p class="catalog-item__descr">Пневматические подъемники</p>
 				</li>
 			</ul> <!-- /catalog-menu -->
@@ -197,7 +197,7 @@
 				</div>
 				<div class="catalog-form">
 					<form class="get-catalog" action="">
-						<h4 class="form-title">Получите каталог двухстоечных подъемников со скидками</h4>
+						<h4 class="form-title">Получите каталог <span class="catalog-change">двухстоечных подъемников</span> со скидками</h4>
 						<label class="form__label" for="phone">Введите ваш телефон*:</label>
 						<input class="form__input" type="tell" id="phone" placeholder="+7 (___)___-__-__">
 
@@ -230,6 +230,8 @@
 			<p class="benefit-title benefit-title__center">Приобретайте оборудование с минимальным износом</p>
 			<p class="benefit-subtitle benefit-subtitle__center">В лизинг или кредит на выгодных условиях</p>
 			<div class="benefit-list">
+				<button class="button mobile-benefit__btn">узнать условия лизинга</button>
+				<button class="button mobile-benefit__btn">подробнее о кредите</button>
 				<div class="benefit-item">
 					<p class="benefit-item__descr">Лизинг от 3-х крупных лизинговых компаний  (ВТБ24, SIEMENS Финанс, Балтийский лизинг)</p>
 					<button class="button">узнать условия лизинга</button>
@@ -272,7 +274,9 @@
 							</div>
 				</div>
 				<div class="benefit-list__item">
-					<img src="build/img/benefit-map.png" alt="карта">
+					<div class="benefit-item__img">
+						<img src="build/img/benefit-map.png" alt="карта">
+					</div>
 				</div>
 			</div> <!-- /.benefit-list -->
 			<div class="benefit-list">
@@ -362,7 +366,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="experience none">
+	<section class="experience ">
 		<div class="wrapper">
 			<div class="section-title">
 				5 лет безупречной работы. 
@@ -616,13 +620,194 @@
 			</div>
 		</div>
 	</section>
-	<section>
+	<section class="our-service none">
 		<div class="wrapper">
 			<div class="section-title">
 					Вы можете зайти в ближайший к вам сервис, чтобы убедиться в 100% надёжности оборудования ЦТО 
 			</div>
+			<div class="steps-list">
+				<div class="steps-list__item">
+						Выберите свой город
+						<div class="step__item-number">
+							01
+						</div>
+				</div>
+				<div class="steps-list__item">
+						Позвоните реальному клиенту, купившему оборудование
+						<div class="step__item-number">
+							02
+						</div>
+				</div>
+			</div>
+			<div id="map">
+
+			</div>
 		</div>
 	</section>
+	<section class="help none">
+			<div class="wrapper">
+				<div class="section-title white">
+						Сэкономим до 35% на подборе аналогичного оборудование под ваши цели
+				</div>
+				<div class="help-content">
+					<ul class="help-list">
+						<li class="help-list__item">
+							<div class="help-item__descr">
+									Получите исчерпывающие рекомендации по выбору подъёмника из 1639 моделей для ваших задач 
+							</div>
+						</li>
+						<li class="help-list__item">
+							<div class="help-item__descr">
+									Узнаете, нужно ли проведение бетонных работ для укрепления фундамента
+							</div>
+						</li>
+						<li class="help-list__item">
+							<div class="help-item__descr">								
+								Получите каталог рекомендованных подъёмников
+							</div>
+						</li>
+					</ul>
+					<div class="catalog-form">
+						<form class="get-catalog" action="">
+							<h4 class="form-title">Оставьте заявку на бесплатную консультацию специалиста</h4>
+							<p class="form-subtitle">
+									<b>Заполните форму</b> —  эксперт обсудит с вами задачу и подберёт аналогичное оборудование без потери качества 
+							</p>
+							<label class="form__label" for="phone">Введите ваш телефон*:</label>
+							<input class="form__input" type="tell" id="phone" placeholder="+7 (___)___-__-__">
+	
+							<label class="form__label" for="phone">Введите ваш e-mail</label>
+							<input class="form__input" type="text" id="phone" placeholder="mail@mail.ru">
+							<div class="main-button">
+								<button type="submit" class="button form-btn">Подобрать оборудование 
+										и сэкономить до 35 %
+								</button>
+							</div>
+							<input id="form-checkbox" class="form-checkbox" type="checkbox" checked>
+							<label for="form-checkbox" class="checkbox-label">Я принимаю <a href="#">условия передачи информации</a></label>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="delivery none">
+			<div class="wrapper">
+				<div class="section-title">
+					Доставка в любой город
+					напрямую с заводов производителей
+				</div>
+				<div class="delivery-list">
+					<div class="delivery-list__item">
+						<div class="discount-icon-box delivery-1"></div>
+						<div class="delivery-item__title">
+							В любой регион точно в срок
+						</div>
+						<div class="delivery-item__descr">
+							Постоянное наличие <b>3327</b> единиц оборудования и запчастей на складе. 
+							Гарантируем доставку оборудования 
+							к Вам, <b>точно в указанные сроки</b>
+						</div>
+					</div>
+					<div class="delivery-list__item">
+						<div class="discount-icon-box delivery-2"></div>
+						<div class="delivery-item__title">
+								Бесплатная доставка в Москве и Кемерево. Экономия до 15% при логистике в другие города  
+						</div>
+						<div class="delivery-item__descr">
+								Работаем более чем с 40 логистическими компаниями, рассчитаем максимально выгодный и быстрый способ доставки, с учётом наших объёмных скидок до 15%
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="goods none">
+			<div class="wrapper">
+				<div class="section-title">
+					Центр технического оборудовая  — это не только подъёмники, но ещё 7070 товаров для автосервисов и шиномонтажных мастерских  
+				</div>
+				<div class="goods-list">
+					<div class="goods-list__item">
+						<img src="build/img/goods/goods-1.png" alt="Шиномонтажное оборудование">
+						<a href="#" class="goods-title">Шиномонтажное <br> оборудование</a>
+					</div>
+					<div class="goods-list__item">
+						<img src="build/img/goods/goods-2.png" alt="Гидравлическое 
+						оборудование">
+						<a href="#" class="goods-title">Гидравлическое <br>
+							оборудование</a>
+					</div>
+					<div class="goods-list__item">
+						<img src="build/img/goods/goods-3.png" alt="Гаражное
+						оборудование">
+						<a href="#" class="goods-title">Гаражное <br>
+							оборудование</a>
+					</div>
+					<div class="goods-list__item">
+						<img src="build/img/goods/goods-4.png" alt="Диагностическое
+						оборудование">
+						<a href="#" class="goods-title">Диагностическое <br>
+							оборудование</a>
+					</div>
+					<div class="goods-list__item">
+						<img src="build/img/goods/goods-5.png" alt="Для кузовного
+						ремонта">
+						<a href="#" class="goods-title">Для кузовного <br>
+							ремонта</a>
+					</div>
+					<div class="goods-list__item">
+						<img src="build/img/goods/goods-6.png" alt="Инструмент 
+						и мебель">
+						<a href="#" class="goods-title">Инструмент <br>
+							и мебель</a>
+					</div>
+					<div class="goods-list__item">
+						<img src="build/img/goods/goods-7.png" alt="Окрасочное
+						оборудование">
+						<a href="#" class="goods-title">Окрасочное <br>
+							оборудование</a>
+					</div>
+					<div class="goods-list__item">
+						<img src="build/img/goods/goods-8.png" alt="Стенды
+						“Развал-схождение”">
+						<a href="#" class="goods-title">Стенды <br>
+							“Развал-схождение”</a>
+					</div>
+					<div class="goods-list__item">
+						<img src="build/img/goods/goods-9.png" alt="Компрессоры">
+						<a href="#" class="goods-title">Компрессоры</a>
+					</div>
+					<div class="goods-list__item">
+						<img src="build/img/goods/goods-10.png" alt="Грузовое
+						оборудование">
+						<a href="#" class="goods-title">Грузовое <br>
+							оборудование</a>
+					</div>
+					<div class="goods-list__item">
+						<img src="build/img/goods/goods-11.png" alt="Сварочное
+						оборудование">
+						<a href="#" class="goods-title">Сварочное <br>
+							оборудование</a>
+					</div>
+					<div class="goods-list__item">
+						<img src="build/img/goods/goods-12.png" alt="Моечное
+						оборудование">
+						<a href="#" class="goods-title">Моечное <br>
+							оборудование</a>
+					</div>
+					<div class="goods-list__item">
+						<img src="build/img/goods/goods-13.png" alt="Электростанции">
+						<a href="#" class="goods-title">Электростанции</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="welcome none">
+			<div class="wrapper">
+				<div class="section-title">
+					Приглашаем в наш офис в Москве и Кемерово
+				</div>
+			</div>
+		</section>
 
 	<script src="build/js/jquery.js"></script>
 	<script src="build/js/jquery.magnific-popup.min.js"></script>

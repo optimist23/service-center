@@ -1,0 +1,31 @@
+.goods {
+	&-list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		&__item {
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			width: 200px;
+			margin-right: 40px;
+			&:nth-child(5n) {
+				margin-right: 0;
+			}
+			img {
+				align-self: center;
+			}
+		}
+	}
+	&-title {
+		margin: 10px 0 70px 0;
+		color: $item_hov;
+		font-family: 'Latoregular', sans-serif;
+		text-decoration: none;
+		text-align: center;
+		&:hover {
+			text-decoration: underline;
+			color: $red;
+		}
+	}
+}

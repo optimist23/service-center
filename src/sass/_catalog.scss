@@ -47,6 +47,10 @@
 				background-color: $item_hov;
 				color: $white;
 			}
+			&.active {
+				background-color: $item_hov;
+				color: $white;
+			}
 		}		
 	}
 	&-item__descr {
@@ -54,6 +58,7 @@
 	}
 	&-body {
 		display: flex;
+		flex-wrap: wrap;
 		.catalog-img {
 			img {
 				max-width: 740px;

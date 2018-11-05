@@ -1,7 +1,4 @@
 .benefit {
-	.section-title {
-		min-width: 1120px;
-	}
 	.number-icon {
 		font-size: 48px;
 		color: $number_icon;
@@ -26,9 +23,11 @@
 	}
 	&-list {
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: space-between;
 		.benefit-item {
 			padding: 48px 30px 30px 30px;
+			margin-bottom: 15px;
 			max-width: 480px;
 			border: 8px solid $red;
 			border-radius: 8px;
@@ -37,5 +36,13 @@
 				border-left: 3px solid $red;
 			}
 		}
+		&__item {
+			.benefit-item__img {
+				max-width: 45%;
+			}
+		}
+	}
+	.mobile-benefit__btn {
+		display: none;
 	}
 }
