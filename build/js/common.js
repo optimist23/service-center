@@ -25,9 +25,8 @@ $(document).ready(function() {
 		]
 	});
 
-	//$('.exp-slider').slick({ asNavFor: '.exp-slider' });
 	
-	$('.experience-slider-box').slick({
+	$('.exp-slider').slick({
 		fade: true,
 		nextArrow: '<div class="arrow arrow-next"><i class="fas fa-angle-right" aria-hidden="true"></i></div>',
 		prevArrow: '<div class="arrow arrow-prev"><i class="fas fa-angle-left" aria-hidden="true"></i></div>',
@@ -49,12 +48,12 @@ $(document).ready(function() {
 		vertical: true,
 		arrows: false,
 		focusOnSelect: true,
-		asNavFor: '.experience-slider-box, .problem-list'
+		asNavFor: '.exp-slider, .problem-list'
 	});
 	$('.problem-list').slick({
 		slidesToShow: 1,
 		arrows: false,
-		asNavFor: '.slider-nav__list, .experience-slider-box'
+		asNavFor: '.slider-nav__list, .exp-slider'
 	});
 
 
@@ -71,10 +70,29 @@ $(document).ready(function() {
 			}
 		]
 	});
+	
 
 	/* модальные окна */
 	$('.best-diller').magnificPopup();
 	$('.free-consultation__link').magnificPopup();
+	$('.popup-benefit__link').magnificPopup();
+	$('.goods-item__link').magnificPopup();
+	$('.popup-tender__link').magnificPopup();
+	$('.popup-equipment__link').magnificPopup();
+	$('.popup-get-catalog__link').magnificPopup({
+		callbacks: {
+			open: function() {
+				$('.get-catalog__slider-list').slick({
+					arrows: true,
+					nextArrow: '<div class="arrow arrow-next"><i class="fas fa-angle-right" aria-hidden="true"></i></div>',
+					prevArrow: '<div class="arrow arrow-prev"><i class="fas fa-angle-left" aria-hidden="true"></i></div>',
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					infinite: true
+				});
+			}
+		}
+	});
 
 
 	/* модальные окна */
@@ -93,4 +111,52 @@ function CatalogChange3(){
 }
 function CatalogChange4(){
   document.querySelector('.catalog-change').innerHTML = "пневматических подъемников";
+}
+
+function benefitChange1(){
+	document.querySelector('.benefitTitleChange').innerHTML = "лизинг";
+	document.querySelector('.benefitChangeBtn').innerHTML = "лизинга";
+}
+function benefitChange2(){
+	document.querySelector('.benefitTitleChange').innerHTML = "кредит";
+	document.querySelector('.benefitChangeBtn').innerHTML = "кредита";
+}
+function goodsItemChange1(){
+  document.querySelector('.goods-popup-title__change').innerHTML = "подходящее шиномонтажное оборудование";
+}
+function goodsItemChange2(){
+  document.querySelector('.goods-popup-title__change').innerHTML = "подходящее гидравлическое оборудование";
+}
+function goodsItemChange3(){
+  document.querySelector('.goods-popup-title__change').innerHTML = "подходящее гаражное оборудование";
+}
+function goodsItemChange4(){
+  document.querySelector('.goods-popup-title__change').innerHTML = "подходящее диагностическое	оборудование";
+}
+function goodsItemChange5(){
+  document.querySelector('.goods-popup-title__change').innerHTML = "подходящее оборудование для кузовного ремонта";
+}
+function goodsItemChange6(){
+  document.querySelector('.goods-popup-title__change').innerHTML = "инструмент	и мебель";
+}
+function goodsItemChange7(){
+  document.querySelector('.goods-popup-title__change').innerHTML = "подходящее	окрасочное оборудование";
+}
+function goodsItemChange8(){
+  document.querySelector('.goods-popup-title__change').innerHTML = "стенды “Развал-схождение”";
+}
+function goodsItemChange9(){
+  document.querySelector('.goods-popup-title__change').innerHTML = "компрессоры";
+}
+function goodsItemChange10(){
+  document.querySelector('.goods-popup-title__change').innerHTML = "подходящее	грузовое оборудование";
+}
+function goodsItemChange11(){
+  document.querySelector('.goods-popup-title__change').innerHTML = "подходящее	сварочное	оборудование";
+}
+function goodsItemChange12(){
+  document.querySelector('.goods-popup-title__change').innerHTML = "подходящее	моечное	оборудование";
+}
+function goodsItemChange13(){
+  document.querySelector('.goods-popup-title__change').innerHTML = "подходящие	электростанции";
 }

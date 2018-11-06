@@ -29,6 +29,22 @@
 			text-align: center;
 		}
 	}
+	.problem {
+		display: flex;
+		flex-wrap: wrap;
+		margin-bottom: 60px;
+		.problem-title {
+			flex-basis: 15%;
+			font-size: 14px;
+		}
+		&-descr {
+			flex-basis: 80%;
+			&__title {
+				font-size: 21px;
+				font-family: 'MontserratAlternatesSemiBold',sans-serif;
+			}
+		}
+	}
 	.equipment {
 		display: flex;
 		flex-wrap: wrap;

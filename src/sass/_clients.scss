@@ -1,5 +1,8 @@
 .clients {
 	.dealership-clients {
+		&__table {
+			margin-bottom: 80px;
+		}
 		&__slider {
 			display: none;
 		}

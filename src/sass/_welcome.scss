@@ -1,17 +1,30 @@
+.tab-control {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
 .tab-label {
+	padding: 24px;
 	cursor:pointer;
 	float: left;
 	margin-right: 5px;
 	min-width: 212px;
 	display: block;
-	background-color: #ecf0f1;
+	background-color: $white;
+	border: 1px solid $border_grey;
+	border-radius: 8px;
 	text-align: center;
+	&:hover {
+		background: $item_hov;
+		color: $white;
+	}
 }
 
 .tab-input {
 	display: none;
 	&:checked + label {
-		background-color: #fff;
+		background-color: $item_hov;
+		color: $white;
 		position: relative;
 		
 	}
@@ -28,8 +41,34 @@ input[id="tab-2"]:checked ~ .content .tab-2{
 }
 
 article {
-	padding: 30px 50px;
+	padding: 30px 0;
 	background-color: #fff;
 	display: none;
 	min-height: 200px;
+	.tab-1 {
+		position: relative;
+	}
+}
+.tab-adress-box {
+	position: absolute;
+	padding: 15px;
+	left: 20%;
+	top: 15%;
+	width: 390px;
+	background: $white;
+	z-index: 100;
+	img {
+		width: 334px;
+	}
+	.adress {
+		text-align: center;
+		.adress-phone {
+			font-family: 'Latosemibold', sans-serif;
+			font-size: 36px;
+		}
+		.adress-place {
+			font-size: 16px;
+			font-family: 'Latoregular', sans-serif;
+		}
+	}
 }

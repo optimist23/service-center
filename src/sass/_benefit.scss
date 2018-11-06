@@ -36,10 +36,8 @@
 				border-left: 3px solid $red;
 			}
 		}
-		&__item {
-			.benefit-item__img {
-				max-width: 45%;
-			}
+		.benefit-list__item {
+			flex-basis: 50%;
 		}
 	}
 	.mobile-benefit__btn {

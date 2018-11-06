@@ -1,5 +1,6 @@
 .help {
 	padding-top: 140px;
+	padding-bottom: 140px;
 	background: url('../img/service-bg.jpg');
 	background-size: cover;
 	color: $white;
@@ -11,6 +12,8 @@
 	}
 	&-list {
 		padding: 0;
+		flex-basis: 50%;
+		margin-right: auto;
 		padding-bottom: 90px;
 		margin-top: 0;
 		list-style-type: none;

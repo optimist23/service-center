@@ -3,6 +3,9 @@
 		.page-header-photo {
 			width: 80%;
 		}
+		.header-menu__item {
+			margin-right: 0;
+		}
 	}
 	.benefit {
 		.benefit-item {
@@ -13,10 +16,6 @@
 			margin: 0 auto;
 			margin-bottom: 15px;
 		}
-		/*
-		.plane-item {
-			order: 2;
-		}*/
 	}
 	.experience-slider-box {
 		width: 90%;
@@ -26,6 +25,14 @@
 	.page-header {
 		&__left {
 		order: 2;
+		}
+		.header-logo {
+			img {
+				width: 120px;
+			}
+		}
+		.header-menu__link {
+			font-size: 12px;
 		}
 	}
 	.advantages{
@@ -60,9 +67,6 @@
 @media screen and (max-width: 768px) {
 	.page-header {
 		text-align: center;
-		.phone {
-		order: -1;
-		}
 		.page-header-content {
 			.main-title {
 				text-align: center;
@@ -105,12 +109,51 @@
 }
 @media screen and (max-width: 992px) {
 	.page-header {
+		.page-header-top {
+			display: flex;
+			justify-content: space-between;
+			.header-menu__item.phone.modile {
+				display: block;
+
+			}
+			.header-menu__phone-link {
+				font-size: 19px;
+			}
+			.free-consultation__link {
+				font-size: 11px;
+			}
+			.header-menu {
+				padding: 15px 0;
+				width: 100%;
+				justify-content: space-between;
+				background: $input_border;
+			}
+			.header-menu__item.phone {
+				display: none;
+			}
+		}
 		.page-header-content {
 			flex-direction: column;
 			align-items: center;
 		}
 		.page-header-photo {
 			margin: 20px auto 0 auto;
+		}
+	}
+	.popup-goods-catalog {
+		display: none;
+	}
+	.popup-tender,
+	.popup-equipment,
+	.popup-get-catalog {
+		&::before {
+			content: none;
+		}
+	}
+	.popup-get-catalog {
+		width: 300px;
+		.popup-get-catalog__slider {
+			display: none;
 		}
 	}
 }
